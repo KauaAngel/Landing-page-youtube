@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template: 90px 1fr 50px / 218px 1fr 200px 1px;
+    grid-template-areas:
+      "canto meio direita"
+      "aside main main"
+      "aside main main"
+      "aside main main";
+  }
+  .parte-1 {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 20px;
+    grid-area: canto;
+  }
+  .division {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .parte-2 {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    grid-area: meio;
+  }
+  #serch {
+    text-align: center;
+    width: 250px;
+    height: 31px;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid black;
+  }
+  #botao:hover {
+    background-color: rgb(151, 147, 147);
+    cursor: pointer;
+  }
+  #botao {
+    background-image: url(/assets/search.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    height: 35px;
+    width: 39px;
+    border-radius: 0 7px 7px 0;
+    border-left: 0px;
+    border: solid 1px;
+  }
+  .parte-3 {
+    justify-self: center;
+    align-self: center;
+    grid-area: direita;
+  }
+  .division-2 {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .aside {
+    justify-self: center;
+    grid-area: aside;
+    text-align: justify;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgba(224, 224, 224, 0.418);
+    grid-area: main;
+  }
+  .bar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .barras {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .barras:hover {
+    background-color: gray;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .menus {
+    width: 300px;
+  }
+  main div:hover {
+    background-color: darkgray;
+    border-radius: 12px;
+    cursor: pointer;
+  }
