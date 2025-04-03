@@ -39,7 +39,7 @@ body {
     cursor: pointer;
   }
   #botao {
-    background-image: url(/assets/search.png);
+    background-image: url(./assets/search.png);
     background-position: 50%;
     background-repeat: no-repeat;
     height: 35px;
